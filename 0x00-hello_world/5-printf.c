@@ -1,8 +1,8 @@
 #include <stdio.h>
-/**
- *main - Entry point
- *My hello, printf task
- * Retun: return 1 after program excution
+
+/
+ * main - Entry point
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
