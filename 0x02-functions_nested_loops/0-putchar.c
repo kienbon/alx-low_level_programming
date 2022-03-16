@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-  char kienbon[] = "_putchar";
+char kienbon[] = "_putchar";
 
-  int c;
+int c;
 
-  for (c = 0; c < 8; c++)
-  {
-    _putchar(kienbon[c]);
-  }
-  _putchar('\n');
-  return (0);
+for (c = 0; c < 8; c++)
+{
+_putchar(kienbon[c]);
+}
+_putchar('\n');
+return (0);
 }
