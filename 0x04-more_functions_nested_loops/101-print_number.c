@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_number -  checks for checks for a digit (0 through 9).
  * @n: n -  Variable
@@ -20,7 +19,7 @@ else if (n > -10 && n < 0)
 {
 n = n - 2 * n;
 _putchar('-');
-_putchar (n + '0');
+_putchar(n + '0');
 }
 
 else
@@ -28,7 +27,7 @@ else
 if (n < 0)
 {
 n = n * -1;
-_putchar ('-');
+_putchar('-');
 }
 z = n;
 while (z / b > 9)
@@ -39,7 +38,7 @@ while (b > 0)
 {
 m = z / b;
 z = z % b;
-_putchar (m + '0');
+_putchar(m + '0');
 b = b / 10;
 }
 }
