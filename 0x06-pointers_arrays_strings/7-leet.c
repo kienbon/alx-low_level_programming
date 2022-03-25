@@ -1,27 +1,36 @@
 #include "main.h"
-
 /**
- * rot13 -  a function that encodes a string using rot13.
- * @s: An input string to encode using rot13
- * Return: An encode string
+ *leet - encodes a string into 1337.
+ *letters a and A are replaced by 4.
+ *Letters e and E are replaced by 3
+ *Letters o and O are replaced by 0
+ *Letters t and T are replaced by 7
+ *Letters l and L are replaced by 1
+ *@s: pointer to string.
+ *
+ *Return: pointer to s.
  */
-char *rot13(char *s)
+char *leet(char *s)
 {
-  int i = 0;
+	int stringCount, leetCount;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
 
-  while (s[i] != '\0')
-  {
-    while ((s[i] >= 'a' && s[i] <= 'z') 
-        (s[i] >= 'A' && s[i] <= 'Z'))
-    {
-      if ((s[i] >= 'a' && s[i] <= 'm') 
-          (s[i] >= 'A' && s[i] <= 'M'))
-        s[i] += 13;
-      else
-        s[i] -= 13;
-      i++;
-    }
-    i++;
-  }
-  return (s);
+/*  scan through string */
+	stringCount = 0;
+	while (s[stringCount] != '\0')
+/* check whether leetLetter is found */
+	{
+		leetCount = 0;
+		while (leetCount < 10)
+		{
+			if (leetLetters[leetCount] == s[stringCount])
+			{
+				s[stringCount] = leetNums[leetCount];
+			}
+			leetCount++;
+		}
+		stringCount++;
+	}
+	return (s);
 }
