@@ -1,1 +1,1 @@
-My readme for alx
+readme for static library
